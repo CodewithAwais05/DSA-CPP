@@ -1,0 +1,12 @@
+Imp Notes-
+* In case of binary, there are zeros to left of number
+  (...000001010) but not to right because zeros to left
+  has no meaning while adding zeros to right change number.
+
+* So, in left shift, we easily move digits to left and fill
+  empty spaces with zeros; like:
+  10 << 2 => 1010 = 101000
+
+* But in right shift, we can move digits to right but that
+  digit ignores as there are no empty spaces on right side
+  to hold that digit; like 10 >> 1 => 1010 = 101
